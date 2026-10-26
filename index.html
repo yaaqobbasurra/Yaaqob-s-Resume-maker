@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CV Maker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">
+  <b>CV Maker</b>
+  <button id="tg" class="tg" data-i="tools"></button>
+  <button id="zo" aria-label="Zoom out">−</button>
+  <button id="zi" aria-label="Zoom in">+</button>
+  <button id="lang">ع / EN</button>
+  <span id="stat"></span>
+  <button id="pr" class="p" data-i="print"></button>
+</div>
+<div class="app">
+  <aside class="panel" id="panel">
+    <label><span data-i="design"></span><select id="tpl"></select></label>
+    <label><span data-i="font"></span><select id="ff"></select></label>
+    <label><span data-i="accent"></span><input type="color" id="ac"></label>
+    <label><span data-i="size"></span><input type="range" id="fs" min="8" max="13" step=".5"></label>
+    <h4 data-i="secs"></h4>
+    <ol id="list"></ol>
+    <div class="r2"><select id="at"></select><button id="add" data-i="add"></button></div>
+    <h4 data-i="sel"></h4>
+    <label><span data-i="w"></span><input type="range" id="sx" min="60" max="140"></label>
+    <label><span data-i="h"></span><input type="range" id="sy" min="60" max="140"></label>
+    <div class="r2"><button id="du" data-i="dupe"></button><button id="de" data-i="dele"></button></div>
+    <button id="rs" data-i="samp"></button>
+  </aside>
+  <main class="view" id="view">
+    <div class="scaler" id="scaler"><article class="sheet" id="sheet"></article></div>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
